@@ -167,7 +167,7 @@ with col2:
     ax.set(xlim=(0, 6))
     sns.despine(left=True, bottom=True)
 
-    figure = st.pyplot(f, width=5)
+    figure = st.pyplot(f)
 
 with col1:
 
