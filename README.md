@@ -4,7 +4,7 @@ This app is a Machine Learning model application which is used to predict the cr
 
 Feature selection, EDA and feature engineering can be viewed from jupyter notebooks. Model used for deployment is XgBoost model due to its memory friendly and light weight nature. This model takes 16 input features and based on which predicts a single output of credit score of a person.
 
-Live link of website is available here => <a target="_blank" href="https://somil7jain-credit-score-classification-appmain-w4i9bk.streamlit.app/">live link</a>.
+Live link of website is available here => <a target="_blank" href="https://somil-credit-score-classification.streamlit.app/">live link</a>.
 
 ## Running Locally
 
