@@ -1,0 +1,10 @@
+numpy
+pandas
+matplotlib
+matplotlib-inline
+seaborn
+pickleshare
+scikit-learn == 1.0.2
+streamlit
+xgboost 
+notebook
