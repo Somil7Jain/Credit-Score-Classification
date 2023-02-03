@@ -199,8 +199,8 @@ with col1:
         output = transform_response(response)
         output = np.array(output).reshape((1, config.num_features))
 
-        output = model.predict(output)[0]
-        credit_score = config.output_transform_dict[output]
+        pred = model.predict(output)[0]
+        credit_score = config.output_transform_dict[pred]
 
         if credit_score == 'Good':
             st.balloons()
@@ -232,6 +232,11 @@ that they are unlikely to repay a loan.''')
 
         with st.expander('Click to see your given input features'):
             st.dataframe(input_df)
+
+        with st.expander('Click to see how certain the algorithm was'):
+            plt.pie(model.predict_proba(output)[0], labels=[
+                    'Good', 'Poor', 'Standard'], autopct='%.0f%%')
+            st.pyplot(prob_fig)
 
         with st.expander('Click to see feature importances'):
             importance = model.feature_importances_
